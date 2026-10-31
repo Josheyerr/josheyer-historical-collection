@@ -26,6 +26,8 @@ ID_FILE = ROOT / "collection_id.txt"
 CREATE_ITEM_RESULT = (3403, 24)
 SUBMIT_ITEM_UPDATE_RESULT = (3404, 16)
 ADD_DEPENDENCY_RESULT = (3412, 24)
+REMOVE_DEPENDENCY_RESULT = (3413, 24)
+REMOVED_FROM_COLLECTION = (2829397295, 3800861092)
 
 MOD_PAGES = [
     (3830498440, Path(r"F:\Projects\holy-deposition-workshop\description.txt")),
@@ -34,6 +36,7 @@ MOD_PAGES = [
 MOD_PAGES_NOTE = "Workshop page text update. Mod files unchanged."
 MOD_CONTENT = {
     3830498440: Path(r"C:\Users\kmkjk\OneDrive\Documents\Paradox Interactive\Crusader Kings III\mod\holy_deposition"),
+    3797139319: Path(r"F:\bap ce compatch\ck3-ce-bap-compatch"),
 }
 
 
@@ -69,6 +72,8 @@ class Steam:
         a.SteamAPI_ISteamUGC_SubmitItemUpdate.argtypes = [c_void_p, c_uint64, c_char_p]
         a.SteamAPI_ISteamUGC_AddDependency.restype = c_uint64
         a.SteamAPI_ISteamUGC_AddDependency.argtypes = [c_void_p, c_uint64, c_uint64]
+        a.SteamAPI_ISteamUGC_RemoveDependency.restype = c_uint64
+        a.SteamAPI_ISteamUGC_RemoveDependency.argtypes = [c_void_p, c_uint64, c_uint64]
         a.SteamAPI_ISteamUtils_IsAPICallCompleted.restype = c_bool
         a.SteamAPI_ISteamUtils_IsAPICallCompleted.argtypes = [c_void_p, c_uint64, ctypes.POINTER(c_bool)]
         a.SteamAPI_ISteamUtils_GetAPICallResult.restype = c_bool
@@ -130,6 +135,13 @@ class Steam:
         raw = self.wait(self.api.SteamAPI_ISteamUGC_AddDependency(self.ugc, collection, child), ADD_DEPENDENCY_RESULT)
         return int.from_bytes(raw[0:4], "little")
 
+    def remove_child(self, collection: int, child: int) -> int:
+        raw = self.wait(
+            self.api.SteamAPI_ISteamUGC_RemoveDependency(self.ugc, collection, child),
+            REMOVE_DEPENDENCY_RESULT,
+        )
+        return int.from_bytes(raw[0:4], "little")
+
     def close(self) -> None:
         self.api.SteamAPI_Shutdown()
         (ROOT / "steam_appid.txt").unlink(missing_ok=True)
@@ -163,6 +175,9 @@ def main() -> None:
         print("collection", collection)
         steam.update(collection, description, ROOT / "preview.jpg", "Collection page and load order")
         print("metadata updated")
+        for mod in REMOVED_FROM_COLLECTION:
+            result = steam.remove_child(collection, mod)
+            print(f"remove {mod} -> {'ok' if result == 1 else f'EResult {result}'}")
         if add_items:
             for i, mod in enumerate(order, 1):
                 result = steam.add_child(collection, mod)

@@ -1,6 +1,6 @@
 [img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/banner.jpg[/img]
 
-[i]97 hand-picked mods for a grounded, historical Crusader Kings III. The full load order is included as a ready-made playset file, conflicts are patched, and everything is tested together on 1.20.[/i]
+[i]95 hand-picked mods for a grounded, historical Crusader Kings III. The full load order is included as a ready-made playset file, conflicts are patched, and everything is tested together on 1.20.[/i]
 
 [img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/box_summary.png[/img]
 
@@ -20,7 +20,7 @@ Questions, crashes or suggestions? Ask on the [url=https://discord.gg/rwdGCanWpA
 [*][b]Unofficial Patch[/b] loads first.
 [*]Gameplay mods follow, then culture and religion, then portraits, graphics and interface.
 [*][b]Holy Deposition[/b] loads second to last.
-[*][b]Josheyer Historical Modpack Fixes[/b] loads [b]last[/b], always. It repairs title creation, hairstyles and culture conflicts between the mods above.
+[*][b]Josheyer Historical Modpack Fixes[/b] loads [b]last[/b], always. It repairs title creation, hairstyles and leftover culture conflicts between the mods above.
 [/list]
 
 [img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_core.png[/img]
@@ -109,9 +109,7 @@ Questions, crashes or suggestions? Ask on the [url=https://discord.gg/rwdGCanWpA
 [*]More Traditions v2
 [*]Muslim Enhancements
 [*]Shadows of the Cross (SOTC) - A Christianity Expansion
-[*]Cultures Expanded
 [*]Renovatio
-[*]Renovatio + CE Patch
 [*]Combined Titles & Coats of Arms
 [/list]
 
@@ -159,7 +157,7 @@ Questions, crashes or suggestions? Ask on the [url=https://discord.gg/rwdGCanWpA
 [list]
 [*]Supported version: [b]1.20.*[/b].
 [*]Holy Deposition's war needs the [i]Roads to Power[/i] DLC. Everything else runs without it.
-[*]RICE, Africa Plus, More Holding Graphics, Historical Accuracy and a few older patches are intentionally left out. The fixes mod covers what their compatches leave behind.
+[*]Cultures Expanded and its Renovatio patch are left out, with RICE, Africa Plus, More Holding Graphics and a few older patches. The fixes mod keeps Africa Plus culture data and covers leftover RICE cultures.
 [*]If you add your own mods, keep them above the fixes mod.
 [*]Bug reports and support: [url=https://discord.gg/rwdGCanWpA]Discord[/url].
 [/list]

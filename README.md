@@ -2,7 +2,7 @@
 
 Steam Workshop collection: https://steamcommunity.com/sharedfiles/filedetails/?id=3830508400
 
-97 Crusader Kings III mods, patched together by
+95 Crusader Kings III mods, patched together by
 [Josheyer Historical Modpack Fixes](https://steamcommunity.com/sharedfiles/filedetails/?id=3797139319).
 
 ## Install

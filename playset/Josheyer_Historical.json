@@ -387,201 +387,189 @@
       "steamId": "2996881191"
     },
     {
-      "displayName": "Cultures Expanded",
-      "enabled": true,
-      "position": 64,
-      "steamId": "2829397295"
-    },
-    {
       "displayName": "Architect of Estates: Domiciles Building Expansion",
       "enabled": true,
-      "position": 65,
+      "position": 64,
       "steamId": "3340544163"
     },
     {
       "displayName": "Medieval Arts",
       "enabled": true,
-      "position": 66,
+      "position": 65,
       "steamId": "2452585382"
     },
     {
       "displayName": "MHG + EPE Compatch",
       "enabled": true,
-      "position": 67,
+      "position": 66,
       "steamId": "2509797306"
     },
     {
       "displayName": "MHG + CFP Compatch",
       "enabled": true,
-      "position": 68,
+      "position": 67,
       "steamId": "2764329234"
     },
     {
       "displayName": "MHG + AOE Compatch",
       "enabled": true,
-      "position": 69,
+      "position": 68,
       "steamId": "3360781295"
     },
     {
       "displayName": "MHG + MA Compatch",
       "enabled": true,
-      "position": 70,
+      "position": 69,
       "steamId": "3765421308"
     },
     {
       "displayName": "RICE + EPE Compatibility Patch",
       "enabled": true,
-      "position": 71,
+      "position": 70,
       "steamId": "2553043828"
     },
     {
       "displayName": "MHG + RICE + EPE Compatch",
       "enabled": true,
-      "position": 72,
+      "position": 71,
       "steamId": "3186143971"
     },
     {
       "displayName": "Unit Packs Expanded",
       "enabled": true,
-      "position": 73,
+      "position": 72,
       "steamId": "2818979385"
     },
     {
       "displayName": "Renovatio",
       "enabled": true,
-      "position": 74,
+      "position": 73,
       "steamId": "3798537678"
-    },
-    {
-      "displayName": "Renovatio + CE Patch",
-      "enabled": true,
-      "position": 75,
-      "steamId": "3800861092"
     },
     {
       "displayName": "[1.20] Simple Graphic Pack",
       "enabled": true,
-      "position": 76,
+      "position": 74,
       "steamId": "3255992492"
     },
     {
       "displayName": "Fair Ladies Expanded",
       "enabled": true,
-      "position": 77,
+      "position": 75,
       "steamId": "2783349674"
     },
     {
       "displayName": "Oriental Beauty",
       "enabled": true,
-      "position": 78,
+      "position": 76,
       "steamId": "3599447506"
     },
     {
       "displayName": "More Female Hairstyles",
       "enabled": true,
-      "position": 79,
+      "position": 77,
       "steamId": "3828759915"
     },
     {
       "displayName": "Real Eyes 3.0",
       "enabled": true,
-      "position": 80,
+      "position": 78,
       "steamId": "3150612985"
     },
     {
       "displayName": "More Background Illustrations",
       "enabled": true,
-      "position": 81,
+      "position": 79,
       "steamId": "2986496756"
     },
     {
       "displayName": "Clear Notifications",
       "enabled": true,
-      "position": 82,
+      "position": 80,
       "steamId": "2261468688"
     },
     {
       "displayName": "Better Struggle UI",
       "enabled": true,
-      "position": 83,
+      "position": 81,
       "steamId": "3077627057"
     },
     {
       "displayName": "Big Battle View",
       "enabled": true,
-      "position": 84,
+      "position": 82,
       "steamId": "3030427202"
     },
     {
       "displayName": "Better CoA Designer",
       "enabled": true,
-      "position": 85,
+      "position": 83,
       "steamId": "2766055258"
     },
     {
       "displayName": "Enhanced Dynasty Tree Viewer",
       "enabled": true,
-      "position": 86,
+      "position": 84,
       "steamId": "2427934113"
     },
     {
       "displayName": "Duel Overlay",
       "enabled": true,
-      "position": 87,
+      "position": 85,
       "steamId": "2636170225"
     },
     {
       "displayName": "New Elegant Portraits",
       "enabled": true,
-      "position": 88,
+      "position": 86,
       "steamId": "3788376803"
     },
     {
       "displayName": "Better Barbershop",
       "enabled": true,
-      "position": 89,
+      "position": 87,
       "steamId": "2220326926"
     },
     {
       "displayName": "Color Picker +",
       "enabled": true,
-      "position": 90,
+      "position": 88,
       "steamId": "3350459101"
     },
     {
       "displayName": "Uniforms of the Realm",
       "enabled": true,
-      "position": 91,
+      "position": 89,
       "steamId": "3809288964"
     },
     {
       "displayName": "Combined Titles & Coats of Arms",
       "enabled": true,
-      "position": 92,
+      "position": 90,
       "steamId": "3823057506"
     },
     {
       "displayName": "Artifact Creator",
       "enabled": true,
-      "position": 93,
+      "position": 91,
       "steamId": "3822387325"
     },
     {
       "displayName": "[1.20] Generous Motherhood",
       "enabled": true,
-      "position": 94,
+      "position": 92,
       "steamId": "3813479895"
     },
     {
       "displayName": "Holy Deposition",
       "steamId": "3830498440",
       "enabled": true,
-      "position": 95
+      "position": 93
     },
     {
       "displayName": "Josheyer Historical Modpack Fixes",
       "enabled": true,
-      "position": 96,
+      "position": 94,
       "steamId": "3797139319"
     }
   ]

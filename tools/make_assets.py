@@ -134,8 +134,8 @@ if __name__ == "__main__":
         ("Credits", "credits"),
     ]:
         header(text, name)
-    split_box(["97 MODS", "PATCHED TOGETHER", "VERSION 1.20"], "summary")
+    split_box(["95 MODS", "PATCHED TOGETHER", "VERSION 1.20"], "summary")
     icons()
     discord_banner()
-    preview_and_banner(97)
+    preview_and_banner(95)
     print("ok", sorted(p.name for p in OUT.iterdir()))
