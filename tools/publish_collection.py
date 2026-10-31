@@ -3,7 +3,7 @@
 Uses a Steamworks 1.5x steam_api64.dll whose versioned accessors (SteamAPI_SteamUGC_v021)
 guarantee the flat functions match the interface layout. CK3's own DLL is too old for that.
 ISteamUGC: CreateItem with the collection file type, then AddDependency(collection, mod) for
-each mod in load order.
+each mod in load order. --pages instead updates only the descriptions of the mods in MOD_PAGES.
 """
 from __future__ import annotations
 
@@ -25,6 +25,12 @@ ID_FILE = ROOT / "collection_id.txt"
 CREATE_ITEM_RESULT = (3403, 24)
 SUBMIT_ITEM_UPDATE_RESULT = (3404, 16)
 ADD_DEPENDENCY_RESULT = (3412, 24)
+
+MOD_PAGES = [
+    (3830498440, Path(r"F:\Projects\holy-deposition-workshop\description.txt")),
+    (3797139319, Path(r"F:\bap ce compatch\workshop\description.txt")),
+]
+MOD_PAGES_NOTE = "Added Discord link for support and other mods."
 
 
 class Steam:
@@ -105,6 +111,15 @@ class Steam:
         if result != 1:
             raise SystemExit(f"SubmitItemUpdate failed with EResult {result}")
 
+    def set_description(self, file_id: int, description: str, note: str) -> None:
+        a = self.api
+        handle = a.SteamAPI_ISteamUGC_StartItemUpdate(self.ugc, APP_ID, file_id)
+        a.SteamAPI_ISteamUGC_SetItemDescription(self.ugc, handle, description.encode("utf-8"))
+        raw = self.wait(a.SteamAPI_ISteamUGC_SubmitItemUpdate(self.ugc, handle, note.encode()), SUBMIT_ITEM_UPDATE_RESULT)
+        result = int.from_bytes(raw[0:4], "little")
+        if result != 1:
+            raise SystemExit(f"SubmitItemUpdate for {file_id} failed with EResult {result}")
+
     def add_child(self, collection: int, child: int) -> int:
         raw = self.wait(self.api.SteamAPI_ISteamUGC_AddDependency(self.ugc, collection, child), ADD_DEPENDENCY_RESULT)
         return int.from_bytes(raw[0:4], "little")
@@ -120,6 +135,11 @@ def main() -> None:
     order = [int(x) for x in (ROOT / "playset" / "collection_order.txt").read_text().split()]
     steam = Steam()
     try:
+        if "--pages" in sys.argv:
+            for file_id, path in MOD_PAGES:
+                steam.set_description(file_id, path.read_text(encoding="utf-8").strip(), MOD_PAGES_NOTE)
+                print(file_id, "description updated")
+            return
         if ID_FILE.exists():
             collection = int(ID_FILE.read_text().split()[0])
         else:
