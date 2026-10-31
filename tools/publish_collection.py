@@ -3,7 +3,7 @@
 Uses a Steamworks 1.5x steam_api64.dll whose versioned accessors (SteamAPI_SteamUGC_v021)
 guarantee the flat functions match the interface layout. CK3's own DLL is too old for that.
 ISteamUGC: CreateItem with the collection file type, then AddDependency(collection, mod) for
-each mod in load order. --pages instead updates only the descriptions of the mods in MOD_PAGES.
+each mod in load order. --pages [ids...] instead updates only the descriptions of the mods in MOD_PAGES (all, or the given ids).
 """
 from __future__ import annotations
 
@@ -30,7 +30,7 @@ MOD_PAGES = [
     (3830498440, Path(r"F:\Projects\holy-deposition-workshop\description.txt")),
     (3797139319, Path(r"F:\bap ce compatch\workshop\description.txt")),
 ]
-MOD_PAGES_NOTE = "Added Discord link for support and other mods."
+MOD_PAGES_NOTE = "Workshop page text update. Mod files unchanged."
 
 
 class Steam:
@@ -136,7 +136,10 @@ def main() -> None:
     steam = Steam()
     try:
         if "--pages" in sys.argv:
+            only = {int(a) for a in sys.argv[sys.argv.index("--pages") + 1:] if a.isdigit()}
             for file_id, path in MOD_PAGES:
+                if only and file_id not in only:
+                    continue
                 steam.set_description(file_id, path.read_text(encoding="utf-8").strip(), MOD_PAGES_NOTE)
                 print(file_id, "description updated")
             return
