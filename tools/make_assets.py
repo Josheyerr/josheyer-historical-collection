@@ -78,6 +78,26 @@ def icons() -> None:
     shutil.copy(CORE_ICON, OUT / "icon_core.png")
 
 
+def discord_banner() -> None:
+    blurple = (88, 101, 242, 255)
+    img = Image.new("RGBA", (WIDTH, 112), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    draw.rounded_rectangle([1, 1, WIDTH - 2, 110], radius=14, fill=(30, 31, 40, 255), outline=GOLD, width=2)
+    draw.rounded_rectangle([12, 12, 100, 99], radius=12, fill=blurple)
+    draw.rounded_rectangle([26, 34, 86, 76], radius=16, fill=(255, 255, 255, 255))
+    draw.polygon([(30, 62), (22, 82), (44, 72)], fill=(255, 255, 255, 255))
+    draw.polygon([(82, 62), (90, 82), (68, 72)], fill=(255, 255, 255, 255))
+    draw.ellipse([40, 47, 52, 60], fill=blurple)
+    draw.ellipse([60, 47, 72, 60], fill=blurple)
+    title = ImageFont.truetype(FONT, 34)
+    sub = ImageFont.truetype(FONT, 17)
+    draw.text((122, 44), "JOIN THE DISCORD", font=title, fill=GOLD, anchor="ls")
+    draw.text((122, 72), "Support, bug reports, questions and my other mods", font=sub,
+              fill=(235, 235, 240, 255), anchor="ls")
+    draw.text((122, 96), "discord.gg/rwdGCanWpA", font=sub, fill=(150, 160, 255, 255), anchor="ls")
+    img.save(OUT / "discord.png")
+
+
 def preview_and_banner(mod_count: int) -> None:
     art = Image.open(ASSETS / "historical_collection_preview.jpg").convert("RGB")
     s = art.width / 1024
@@ -116,5 +136,6 @@ if __name__ == "__main__":
         header(text, name)
     split_box(["97 MODS", "PATCHED TOGETHER", "VERSION 1.20"], "summary")
     icons()
+    discord_banner()
     preview_and_banner(97)
     print("ok", sorted(p.name for p in OUT.iterdir()))

@@ -4,6 +4,9 @@
 
 [img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/box_summary.png[/img]
 
+[url=https://discord.gg/rwdGCanWpA][img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/discord.png[/img][/url]
+Questions, crashes or suggestions? Ask on the [url=https://discord.gg/rwdGCanWpA]Discord[/url].
+
 [img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_install.png[/img]
 [olist]
 [*][b]Subscribe to all[/b] with the green button above, and let Steam finish downloading.
@@ -18,7 +21,6 @@
 [*]Gameplay mods follow, then culture and religion, then portraits, graphics and interface.
 [*][b]Holy Deposition[/b] loads second to last.
 [*][b]Josheyer Historical Modpack Fixes[/b] loads [b]last[/b], always. It repairs title creation, hairstyles and culture conflicts between the mods above.
-[*]Mods in this collection are listed in load order.
 [/list]
 
 [img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_core.png[/img]
@@ -159,7 +161,7 @@
 [*]Holy Deposition's war needs the [i]Roads to Power[/i] DLC. Everything else runs without it.
 [*]RICE, Africa Plus, More Holding Graphics, Historical Accuracy and a few older patches are intentionally left out. The fixes mod covers what their compatches leave behind.
 [*]If you add your own mods, keep them above the fixes mod.
+[*]Bug reports and support: [url=https://discord.gg/rwdGCanWpA]Discord[/url].
 [/list]
 
-[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_credits.png[/img]
-Every mod here belongs to its author. Please rate and support the original mods. This collection only gathers them and patches them to work together.
+[i]Every mod here belongs to its author. Please rate and support the original mods.[/i]

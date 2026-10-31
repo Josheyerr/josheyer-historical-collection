@@ -12,6 +12,8 @@ DESCRIPTION_OUT = ROOT / "description.txt"
 REPO = "Josheyerr/josheyer-historical-collection"
 IMG = f"https://raw.githubusercontent.com/{REPO}/main/images"
 JSON_PAGE = f"https://github.com/{REPO}/blob/main/playset/Josheyer_Historical.json"
+DISCORD = "https://discord.gg/rwdGCanWpA"
+MAX_DESCRIPTION = 8000
 FIXES_ID = "3797139319"
 HOLY_DEPOSITION = {"displayName": "Holy Deposition", "steamId": "3830498440"}
 
@@ -124,6 +126,9 @@ def description(order: list[dict]) -> str:
         "",
         f"[img]{IMG}/box_summary.png[/img]",
         "",
+        f"[url={DISCORD}][img]{IMG}/discord.png[/img][/url]",
+        f"Questions, crashes or suggestions? Ask on the [url={DISCORD}]Discord[/url].",
+        "",
         f"[img]{IMG}/header_install.png[/img]",
         "[olist]",
         "[*][b]Subscribe to all[/b] with the green button above, and let Steam finish downloading.",
@@ -140,7 +145,6 @@ def description(order: list[dict]) -> str:
         "[*][b]Holy Deposition[/b] loads second to last.",
         "[*][b]Josheyer Historical Modpack Fixes[/b] loads [b]last[/b], always. It repairs title creation, "
         "hairstyles and culture conflicts between the mods above.",
-        "[*]Mods in this collection are listed in load order.",
         "[/list]",
         "",
     ]
@@ -161,11 +165,10 @@ def description(order: list[dict]) -> str:
         "[*]RICE, Africa Plus, More Holding Graphics, Historical Accuracy and a few older patches are "
         "intentionally left out. The fixes mod covers what their compatches leave behind.",
         "[*]If you add your own mods, keep them above the fixes mod.",
+        f"[*]Bug reports and support: [url={DISCORD}]Discord[/url].",
         "[/list]",
         "",
-        f"[img]{IMG}/header_credits.png[/img]",
-        "Every mod here belongs to its author. Please rate and support the original mods. "
-        "This collection only gathers them and patches them to work together.",
+        "[i]Every mod here belongs to its author. Please rate and support the original mods.[/i]",
     ]
     return "\n".join(out) + "\n"
 
@@ -179,6 +182,8 @@ def main() -> None:
     )
     ORDER_OUT.write_text("\n".join(m["steamId"] for m in order) + "\n", encoding="utf-8")
     text = description(order)
+    if len(text.encode("utf-8")) > MAX_DESCRIPTION:
+        raise SystemExit(f"description is {len(text.encode('utf-8'))} bytes, Steam allows {MAX_DESCRIPTION}")
     DESCRIPTION_OUT.write_text(text, encoding="utf-8")
     print(f"{len(order)} mods, description {len(text)} chars")
 
