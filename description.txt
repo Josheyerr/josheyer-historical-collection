@@ -1,0 +1,165 @@
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/banner.jpg[/img]
+
+[i]97 hand-picked mods for a grounded, historical Crusader Kings III. The full load order is included as a ready-made playset file, conflicts are patched, and everything is tested together on 1.20.[/i]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/box_summary.png[/img]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_install.png[/img]
+[olist]
+[*][b]Subscribe to all[/b] with the green button above, and let Steam finish downloading.
+[*]Download the playset file: [url=https://github.com/Josheyerr/josheyer-historical-collection/blob/main/playset/Josheyer_Historical.json]Josheyer_Historical.json[/url] (use the download button on that page).
+[*]In the Paradox launcher, open [b]Playsets[/b], then [b]Import playset[/b], and choose the file. Every mod lands in the right order, with the right ones enabled.
+[*]Start a [b]new game[/b]. This setup is not save-compatible.
+[/olist]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_load.png[/img]
+[list]
+[*][b]Unofficial Patch[/b] loads first.
+[*]Gameplay mods follow, then culture and religion, then portraits, graphics and interface.
+[*][b]Holy Deposition[/b] loads second to last.
+[*][b]Josheyer Historical Modpack Fixes[/b] loads [b]last[/b], always. It repairs title creation, hairstyles and culture conflicts between the mods above.
+[*]Mods in this collection are listed in load order.
+[/list]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_core.png[/img]
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/icon_core.png[/img] The base everything stands on: the community bug-fix patch, plus two mods made for this playset. Holy Deposition adds a crusade-style war for adventurers, and the fixes mod glues the whole pack together.
+[list]
+[*]Unofficial Patch
+[*]Holy Deposition
+[*]Josheyer Historical Modpack Fixes
+[/list]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_realm.png[/img]
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/icon_realm.png[/img] Deeper feudal politics: contracts you can renegotiate, vassals with agency, crown authority that matters, legitimacy that builds over time and realistic succession.
+[list]
+[*][LOT] Legitimacy Over Time
+[*]A Landed Knights Mod
+[*][1.20] Immersive Domain Management
+[*][1.20] Immersive Realm Laws
+[*]Imperial Guards
+[*]Improved Exclave Independence (Updated)
+[*][DISCONTINUED] Modify Vassal Contract
+[*]More Interactive Vassals
+[*]Pervasive Crown Authority
+[*][1.20] Royal Court for Dukes
+[*]Better Marriage Truces & Alliances
+[*]Employ Landless Adventurer
+[*]Leo VI's Mass Vassal Directives
+[*]Succession Expanded
+[*]Architect of Estates: Domiciles Building Expansion
+[/list]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_war.png[/img]
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/icon_war.png[/img] Historic invasions arrive on time, armies get regional men-at-arms, commanders matter more and battles look and feel bigger.
+[list]
+[*]Historic Invasions
+[*]Historic Invasions Fix and Addon
+[*][1.20] Immersive Mercs & Raiders
+[*]More Regional Men-at-Arms
+[*]Become a Blademaster by Winning Duels
+[*]Better Battles Updated 1.20
+[*]Commander+ 1.20
+[*]Better Executions Updated
+[*]Holy Orders for Adventurers
+[*]Unit Packs Expanded
+[/list]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_court.png[/img]
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/icon_court.png[/img] Living courts and believable families: hundreds of new events, smarter AI education and marriage, new lifestyles, court positions and character traits.
+[list]
+[*]Historical Quotes
+[*]Eastern Roman Great Projects
+[*][FSF] Positive Giant Trait
+[*][FSF] Positive Albino Trait
+[*][FSF] Browse the Bookstore
+[*]A New Sensible Family 3
+[*]A Spouse Designer for 1.20.*
+[*][1.20] Additional Lifestyles
+[*]Active Courtiers
+[*]Fate Of Byzantium
+[*]Grand Remembrance
+[*]Immersive Chaste Trait
+[*][1.20] Immersive Personalities
+[*]Local Artisan
+[*]More Lifestyles - Education Submod
+[*]More Natural Disasters
+[*]Multilingual Education
+[*][1.20] Royal Court Event Pack
+[*]Better AI Education
+[*]BMTA Better Marriage (AI)
+[*]Clear Artifact Levels
+[*]Councillor's experience trait
+[*][1.20] County Temperaments
+[*]Court Herbalist
+[*]Court Alchemist
+[*]Invite Debutantes
+[*]Ruler Designer Unlocked
+[*]VIET Events - A Flavor and Immersion Event Mod
+[*]Social Relations Expanded (SRE) - Rework
+[*]Artifact Creator
+[*][1.20] Generous Motherhood
+[/list]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_faith.png[/img]
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/icon_faith.png[/img] Richer faiths, traditions and cultures across Europe, Africa and the Middle East, plus historical titles and coats of arms.
+[list]
+[*]More Historicity
+[*]More Traditions v2
+[*]Muslim Enhancements
+[*]Shadows of the Cross (SOTC) - A Christianity Expansion
+[*]Cultures Expanded
+[*]Renovatio
+[*]Renovatio + CE Patch
+[*]Combined Titles & Coats of Arms
+[/list]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_art.png[/img]
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/icon_art.png[/img] Expanded ethnicities, clothing, hairstyles and eyes, new holding and building art, illustrations and loading screens.
+[list]
+[*]199 Immersive Loading Screens
+[*]Community Flavor Pack
+[*]Ethnicities & Portraits Expanded
+[*]ME - EPE Compatch
+[*]CFP + EPE Compatibility Patch
+[*]Medieval Arts
+[*]MHG + EPE Compatch
+[*]MHG + CFP Compatch
+[*]MHG + AOE Compatch
+[*]MHG + MA Compatch
+[*]RICE + EPE Compatibility Patch
+[*]MHG + RICE + EPE Compatch
+[*][1.20] Simple Graphic Pack
+[*]Fair Ladies Expanded
+[*]Oriental Beauty
+[*]More Female Hairstyles
+[*]Real Eyes 3.0
+[*]More Background Illustrations
+[*]New Elegant Portraits
+[*]Uniforms of the Realm
+[/list]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_ui.png[/img]
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/icon_ui.png[/img] Better search, camera, notifications, battle and struggle views, and nicer designers.
+[list]
+[*]Advanced Character Search
+[*]better camera zoom
+[*]Clear Notifications
+[*]Better Struggle UI
+[*]Big Battle View
+[*]Better CoA Designer
+[*]Enhanced Dynasty Tree Viewer
+[*]Duel Overlay
+[*]Better Barbershop
+[*]Color Picker +
+[/list]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_notes.png[/img]
+[list]
+[*]Supported version: [b]1.20.*[/b].
+[*]Holy Deposition's war needs the [i]Roads to Power[/i] DLC. Everything else runs without it.
+[*]RICE, Africa Plus, More Holding Graphics, Historical Accuracy and a few older patches are intentionally left out. The fixes mod covers what their compatches leave behind.
+[*]If you add your own mods, keep them above the fixes mod.
+[/list]
+
+[img]https://raw.githubusercontent.com/Josheyerr/josheyer-historical-collection/main/images/header_credits.png[/img]
+Every mod here belongs to its author. Please rate and support the original mods. This collection only gathers them and patches them to work together.

@@ -1,0 +1,588 @@
+{
+  "game": "ck3",
+  "name": "Josheyer Historical",
+  "mods": [
+    {
+      "displayName": "Unofficial Patch",
+      "enabled": true,
+      "position": 0,
+      "steamId": "2871648329"
+    },
+    {
+      "displayName": "Historical Quotes",
+      "enabled": true,
+      "position": 1,
+      "steamId": "2893554112"
+    },
+    {
+      "displayName": "More Historicity",
+      "enabled": true,
+      "position": 2,
+      "steamId": "3107648868"
+    },
+    {
+      "displayName": "Eastern Roman Great Projects",
+      "enabled": true,
+      "position": 3,
+      "steamId": "3655093103"
+    },
+    {
+      "displayName": "[FSF] Positive Giant Trait",
+      "enabled": true,
+      "position": 4,
+      "steamId": "2654374260"
+    },
+    {
+      "displayName": "[FSF] Positive Albino Trait",
+      "enabled": true,
+      "position": 5,
+      "steamId": "2657499830"
+    },
+    {
+      "displayName": "[FSF] Browse the Bookstore",
+      "enabled": true,
+      "position": 6,
+      "steamId": "2751980550"
+    },
+    {
+      "displayName": "[LOT] Legitimacy Over Time",
+      "enabled": true,
+      "position": 7,
+      "steamId": "3305687550"
+    },
+    {
+      "displayName": "199 Immersive Loading Screens",
+      "enabled": true,
+      "position": 8,
+      "steamId": "2227406359"
+    },
+    {
+      "displayName": "A New Sensible Family 3",
+      "enabled": true,
+      "position": 9,
+      "steamId": "3045026915"
+    },
+    {
+      "displayName": "A Landed Knights Mod",
+      "enabled": true,
+      "position": 10,
+      "steamId": "3361162762"
+    },
+    {
+      "displayName": "A Spouse Designer for 1.20.*",
+      "enabled": true,
+      "position": 11,
+      "steamId": "3597166528"
+    },
+    {
+      "displayName": "[1.20] Additional Lifestyles",
+      "enabled": true,
+      "position": 12,
+      "steamId": "3433842378"
+    },
+    {
+      "displayName": "Active Courtiers",
+      "enabled": true,
+      "position": 13,
+      "steamId": "3157170996"
+    },
+    {
+      "displayName": "Advanced Character Search",
+      "enabled": true,
+      "position": 14,
+      "steamId": "3084203091"
+    },
+    {
+      "displayName": "Historic Invasions",
+      "enabled": true,
+      "position": 15,
+      "steamId": "2837398670"
+    },
+    {
+      "displayName": "Historic Invasions Fix and Addon",
+      "enabled": true,
+      "position": 16,
+      "steamId": "3599748822"
+    },
+    {
+      "displayName": "Fate Of Byzantium",
+      "enabled": true,
+      "position": 17,
+      "steamId": "3593415435"
+    },
+    {
+      "displayName": "Grand Remembrance",
+      "enabled": true,
+      "position": 18,
+      "steamId": "3678529052"
+    },
+    {
+      "displayName": "Immersive Chaste Trait",
+      "enabled": true,
+      "position": 19,
+      "steamId": "2662352702"
+    },
+    {
+      "displayName": "[1.20] Immersive Domain Management",
+      "enabled": true,
+      "position": 20,
+      "steamId": "3604729196"
+    },
+    {
+      "displayName": "[1.20] Immersive Personalities",
+      "enabled": true,
+      "position": 21,
+      "steamId": "3596393244"
+    },
+    {
+      "displayName": "[1.20] Immersive Realm Laws",
+      "enabled": true,
+      "position": 22,
+      "steamId": "3351630685"
+    },
+    {
+      "displayName": "[1.20] Immersive Mercs & Raiders",
+      "enabled": true,
+      "position": 23,
+      "steamId": "3461530706"
+    },
+    {
+      "displayName": "Imperial Guards",
+      "enabled": true,
+      "position": 24,
+      "steamId": "3595280210"
+    },
+    {
+      "displayName": "Improved Exclave Independence (Updated)",
+      "enabled": true,
+      "position": 25,
+      "steamId": "3499199200"
+    },
+    {
+      "displayName": "Local Artisan",
+      "enabled": true,
+      "position": 26,
+      "steamId": "2875403237"
+    },
+    {
+      "displayName": "[DISCONTINUED] Modify Vassal Contract",
+      "enabled": true,
+      "position": 27,
+      "steamId": "2779619112"
+    },
+    {
+      "displayName": "More Interactive Vassals",
+      "enabled": true,
+      "position": 28,
+      "steamId": "2712590542"
+    },
+    {
+      "displayName": "Pervasive Crown Authority",
+      "enabled": true,
+      "position": 29,
+      "steamId": "2692957667"
+    },
+    {
+      "displayName": "More Lifestyles - Education Submod",
+      "enabled": true,
+      "position": 30,
+      "steamId": "3158566134"
+    },
+    {
+      "displayName": "More Natural Disasters",
+      "enabled": true,
+      "position": 31,
+      "steamId": "3602600136"
+    },
+    {
+      "displayName": "More Regional Men-at-Arms",
+      "enabled": true,
+      "position": 32,
+      "steamId": "3567954900"
+    },
+    {
+      "displayName": "Multilingual Education",
+      "enabled": true,
+      "position": 33,
+      "steamId": "2756456587"
+    },
+    {
+      "displayName": "More Traditions v2",
+      "enabled": true,
+      "position": 34,
+      "steamId": "2893793966"
+    },
+    {
+      "displayName": "[1.20] Royal Court Event Pack",
+      "enabled": true,
+      "position": 35,
+      "steamId": "3360676953"
+    },
+    {
+      "displayName": "[1.20] Royal Court for Dukes",
+      "enabled": true,
+      "position": 36,
+      "steamId": "3006877184"
+    },
+    {
+      "displayName": "Better AI Education",
+      "enabled": true,
+      "position": 37,
+      "steamId": "2753934263"
+    },
+    {
+      "displayName": "Become a Blademaster by Winning Duels",
+      "enabled": true,
+      "position": 38,
+      "steamId": "3200520888"
+    },
+    {
+      "displayName": "Better Battles Updated 1.20",
+      "enabled": true,
+      "position": 39,
+      "steamId": "3101905160"
+    },
+    {
+      "displayName": "Commander+ 1.20",
+      "enabled": true,
+      "position": 40,
+      "steamId": "3716251917"
+    },
+    {
+      "displayName": "better camera zoom",
+      "enabled": true,
+      "position": 41,
+      "steamId": "2243723476"
+    },
+    {
+      "displayName": "Better Marriage Truces & Alliances",
+      "enabled": true,
+      "position": 42,
+      "steamId": "3194153945"
+    },
+    {
+      "displayName": "Better Executions Updated",
+      "enabled": true,
+      "position": 43,
+      "steamId": "2429466948"
+    },
+    {
+      "displayName": "BMTA Better Marriage (AI)",
+      "enabled": true,
+      "position": 44,
+      "steamId": "3616853064"
+    },
+    {
+      "displayName": "Clear Artifact Levels",
+      "enabled": true,
+      "position": 45,
+      "steamId": "2748508571"
+    },
+    {
+      "displayName": "Councillor's experience trait",
+      "enabled": true,
+      "position": 46,
+      "steamId": "2721974781"
+    },
+    {
+      "displayName": "[1.20] County Temperaments",
+      "enabled": true,
+      "position": 47,
+      "steamId": "3445721977"
+    },
+    {
+      "displayName": "Court Herbalist",
+      "enabled": true,
+      "position": 48,
+      "steamId": "3571752592"
+    },
+    {
+      "displayName": "Court Alchemist",
+      "enabled": true,
+      "position": 49,
+      "steamId": "3548614933"
+    },
+    {
+      "displayName": "Employ Landless Adventurer",
+      "enabled": true,
+      "position": 50,
+      "steamId": "3442769560"
+    },
+    {
+      "displayName": "Invite Debutantes",
+      "enabled": true,
+      "position": 51,
+      "steamId": "2677152091"
+    },
+    {
+      "displayName": "Ruler Designer Unlocked",
+      "enabled": true,
+      "position": 52,
+      "steamId": "2478202444"
+    },
+    {
+      "displayName": "Leo VI's Mass Vassal Directives",
+      "enabled": true,
+      "position": 53,
+      "steamId": "3766246044"
+    },
+    {
+      "displayName": "VIET Events - A Flavor and Immersion Event Mod",
+      "enabled": true,
+      "position": 54,
+      "steamId": "2227658180"
+    },
+    {
+      "displayName": "Succession Expanded",
+      "enabled": true,
+      "position": 55,
+      "steamId": "2650385452"
+    },
+    {
+      "displayName": "Social Relations Expanded (SRE) - Rework",
+      "enabled": true,
+      "position": 56,
+      "steamId": "3729520553"
+    },
+    {
+      "displayName": "Muslim Enhancements",
+      "enabled": true,
+      "position": 57,
+      "steamId": "2241658518"
+    },
+    {
+      "displayName": "Shadows of the Cross (SOTC) - A Christianity Expansion",
+      "enabled": true,
+      "position": 58,
+      "steamId": "3827420629"
+    },
+    {
+      "displayName": "Holy Orders for Adventurers",
+      "enabled": true,
+      "position": 59,
+      "steamId": "3817429748"
+    },
+    {
+      "displayName": "Community Flavor Pack",
+      "enabled": true,
+      "position": 60,
+      "steamId": "2220098919"
+    },
+    {
+      "displayName": "Ethnicities & Portraits Expanded",
+      "enabled": true,
+      "position": 61,
+      "steamId": "2507209632"
+    },
+    {
+      "displayName": "ME - EPE Compatch",
+      "enabled": true,
+      "position": 62,
+      "steamId": "3546414558"
+    },
+    {
+      "displayName": "CFP + EPE Compatibility Patch",
+      "enabled": true,
+      "position": 63,
+      "steamId": "2996881191"
+    },
+    {
+      "displayName": "Cultures Expanded",
+      "enabled": true,
+      "position": 64,
+      "steamId": "2829397295"
+    },
+    {
+      "displayName": "Architect of Estates: Domiciles Building Expansion",
+      "enabled": true,
+      "position": 65,
+      "steamId": "3340544163"
+    },
+    {
+      "displayName": "Medieval Arts",
+      "enabled": true,
+      "position": 66,
+      "steamId": "2452585382"
+    },
+    {
+      "displayName": "MHG + EPE Compatch",
+      "enabled": true,
+      "position": 67,
+      "steamId": "2509797306"
+    },
+    {
+      "displayName": "MHG + CFP Compatch",
+      "enabled": true,
+      "position": 68,
+      "steamId": "2764329234"
+    },
+    {
+      "displayName": "MHG + AOE Compatch",
+      "enabled": true,
+      "position": 69,
+      "steamId": "3360781295"
+    },
+    {
+      "displayName": "MHG + MA Compatch",
+      "enabled": true,
+      "position": 70,
+      "steamId": "3765421308"
+    },
+    {
+      "displayName": "RICE + EPE Compatibility Patch",
+      "enabled": true,
+      "position": 71,
+      "steamId": "2553043828"
+    },
+    {
+      "displayName": "MHG + RICE + EPE Compatch",
+      "enabled": true,
+      "position": 72,
+      "steamId": "3186143971"
+    },
+    {
+      "displayName": "Unit Packs Expanded",
+      "enabled": true,
+      "position": 73,
+      "steamId": "2818979385"
+    },
+    {
+      "displayName": "Renovatio",
+      "enabled": true,
+      "position": 74,
+      "steamId": "3798537678"
+    },
+    {
+      "displayName": "Renovatio + CE Patch",
+      "enabled": true,
+      "position": 75,
+      "steamId": "3800861092"
+    },
+    {
+      "displayName": "[1.20] Simple Graphic Pack",
+      "enabled": true,
+      "position": 76,
+      "steamId": "3255992492"
+    },
+    {
+      "displayName": "Fair Ladies Expanded",
+      "enabled": true,
+      "position": 77,
+      "steamId": "2783349674"
+    },
+    {
+      "displayName": "Oriental Beauty",
+      "enabled": true,
+      "position": 78,
+      "steamId": "3599447506"
+    },
+    {
+      "displayName": "More Female Hairstyles",
+      "enabled": true,
+      "position": 79,
+      "steamId": "3828759915"
+    },
+    {
+      "displayName": "Real Eyes 3.0",
+      "enabled": true,
+      "position": 80,
+      "steamId": "3150612985"
+    },
+    {
+      "displayName": "More Background Illustrations",
+      "enabled": true,
+      "position": 81,
+      "steamId": "2986496756"
+    },
+    {
+      "displayName": "Clear Notifications",
+      "enabled": true,
+      "position": 82,
+      "steamId": "2261468688"
+    },
+    {
+      "displayName": "Better Struggle UI",
+      "enabled": true,
+      "position": 83,
+      "steamId": "3077627057"
+    },
+    {
+      "displayName": "Big Battle View",
+      "enabled": true,
+      "position": 84,
+      "steamId": "3030427202"
+    },
+    {
+      "displayName": "Better CoA Designer",
+      "enabled": true,
+      "position": 85,
+      "steamId": "2766055258"
+    },
+    {
+      "displayName": "Enhanced Dynasty Tree Viewer",
+      "enabled": true,
+      "position": 86,
+      "steamId": "2427934113"
+    },
+    {
+      "displayName": "Duel Overlay",
+      "enabled": true,
+      "position": 87,
+      "steamId": "2636170225"
+    },
+    {
+      "displayName": "New Elegant Portraits",
+      "enabled": true,
+      "position": 88,
+      "steamId": "3788376803"
+    },
+    {
+      "displayName": "Better Barbershop",
+      "enabled": true,
+      "position": 89,
+      "steamId": "2220326926"
+    },
+    {
+      "displayName": "Color Picker +",
+      "enabled": true,
+      "position": 90,
+      "steamId": "3350459101"
+    },
+    {
+      "displayName": "Uniforms of the Realm",
+      "enabled": true,
+      "position": 91,
+      "steamId": "3809288964"
+    },
+    {
+      "displayName": "Combined Titles & Coats of Arms",
+      "enabled": true,
+      "position": 92,
+      "steamId": "3823057506"
+    },
+    {
+      "displayName": "Artifact Creator",
+      "enabled": true,
+      "position": 93,
+      "steamId": "3822387325"
+    },
+    {
+      "displayName": "[1.20] Generous Motherhood",
+      "enabled": true,
+      "position": 94,
+      "steamId": "3813479895"
+    },
+    {
+      "displayName": "Holy Deposition",
+      "steamId": "3830498440",
+      "enabled": true,
+      "position": 95
+    },
+    {
+      "displayName": "Josheyer Historical Modpack Fixes",
+      "enabled": true,
+      "position": 96,
+      "steamId": "3797139319"
+    }
+  ]
+}
