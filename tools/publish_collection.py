@@ -4,6 +4,7 @@ Uses a Steamworks 1.5x steam_api64.dll whose versioned accessors (SteamAPI_Steam
 guarantee the flat functions match the interface layout. CK3's own DLL is too old for that.
 ISteamUGC: CreateItem with the collection file type, then AddDependency(collection, mod) for
 each mod in load order. --pages [ids...] instead updates only the descriptions of the mods in MOD_PAGES (all, or the given ids).
+--content ID "change note" uploads the mod folder in MOD_CONTENT plus its description.
 """
 from __future__ import annotations
 
@@ -31,6 +32,9 @@ MOD_PAGES = [
     (3797139319, Path(r"F:\bap ce compatch\workshop\description.txt")),
 ]
 MOD_PAGES_NOTE = "Workshop page text update. Mod files unchanged."
+MOD_CONTENT = {
+    3830498440: Path(r"C:\Users\kmkjk\OneDrive\Documents\Paradox Interactive\Crusader Kings III\mod\holy_deposition"),
+}
 
 
 class Steam:
@@ -55,7 +59,7 @@ class Steam:
         a.SteamAPI_ISteamUGC_CreateItem.argtypes = [c_void_p, c_uint32, c_int]
         a.SteamAPI_ISteamUGC_StartItemUpdate.restype = c_uint64
         a.SteamAPI_ISteamUGC_StartItemUpdate.argtypes = [c_void_p, c_uint32, c_uint64]
-        for name in ("SetItemTitle", "SetItemDescription", "SetItemPreview"):
+        for name in ("SetItemTitle", "SetItemDescription", "SetItemPreview", "SetItemContent"):
             fn = getattr(a, f"SteamAPI_ISteamUGC_{name}")
             fn.restype = c_bool
             fn.argtypes = [c_void_p, c_uint64, c_char_p]
@@ -111,10 +115,12 @@ class Steam:
         if result != 1:
             raise SystemExit(f"SubmitItemUpdate failed with EResult {result}")
 
-    def set_description(self, file_id: int, description: str, note: str) -> None:
+    def set_description(self, file_id: int, description: str, note: str, content: Path | None = None) -> None:
         a = self.api
         handle = a.SteamAPI_ISteamUGC_StartItemUpdate(self.ugc, APP_ID, file_id)
         a.SteamAPI_ISteamUGC_SetItemDescription(self.ugc, handle, description.encode("utf-8"))
+        if content is not None:
+            a.SteamAPI_ISteamUGC_SetItemContent(self.ugc, handle, str(content).encode())
         raw = self.wait(a.SteamAPI_ISteamUGC_SubmitItemUpdate(self.ugc, handle, note.encode()), SUBMIT_ITEM_UPDATE_RESULT)
         result = int.from_bytes(raw[0:4], "little")
         if result != 1:
@@ -135,6 +141,12 @@ def main() -> None:
     order = [int(x) for x in (ROOT / "playset" / "collection_order.txt").read_text().split()]
     steam = Steam()
     try:
+        if "--content" in sys.argv:
+            file_id, note = int(sys.argv[sys.argv.index("--content") + 1]), sys.argv[sys.argv.index("--content") + 2]
+            page = dict(MOD_PAGES)[file_id]
+            steam.set_description(file_id, page.read_text(encoding="utf-8").strip(), note, MOD_CONTENT[file_id])
+            print(file_id, "files and description updated")
+            return
         if "--pages" in sys.argv:
             only = {int(a) for a in sys.argv[sys.argv.index("--pages") + 1:] if a.isdigit()}
             for file_id, path in MOD_PAGES:
